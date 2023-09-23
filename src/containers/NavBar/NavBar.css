@@ -1,0 +1,235 @@
+.NavBar {
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 3em;
+    align-items: center;
+}
+
+.NavBar img {
+    cursor: pointer;
+    display: none;
+}
+
+.get {
+    color: #FFF;
+    font-family: "Clash Display";
+    padding-left: 2rem;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.linked {
+    color: #D434FE;
+    font-family: "Clash Display";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (max-width: 1320px) {
+    .right {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .NavBar {
+        padding-left: 1rem;
+    }
+
+    .left {
+        scale: .9;
+    }
+}
+
+@media (max-width: 900px) {
+    .NavBar {
+        margin-left: 0;
+        padding-left: 0;
+        width: 95%;
+    }
+
+    .left {
+        scale: .8;
+    }
+}
+
+@media (max-width: 750px) {
+    .NavBar {
+    }
+
+    .NavBar img {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .NavBar {
+        justify-content: space-around;
+        gap: 6rem;
+    }
+
+    .get {
+        padding-left: 0;
+    }
+
+    .left {
+        scale: .6;
+    }
+}   
+
+@media (max-width: 400px) {
+    .get, .linked {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+/* 
+======================================================================================================
+    COMMENTS
+_____________________________________________________________________________________________________
+*/
+
+
+/* .NavBar {
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 3em;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8rem;
+}
+
+.right button {
+    width: 172px;
+    height: 53px;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
+
+.NavBar img {
+    cursor: pointer;
+    display: none;
+}
+
+.text {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.text span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.get {
+    color: #FFF;
+    font-family: "Clash Display";
+    padding-left: 2rem;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.linked {
+    color: #D434FE;
+    font-family: "Clash Display";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (max-width: 1320px) {
+    .right {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .NavBar {
+        padding-left: 1rem;
+    }
+
+    .left {
+        scale: .9;
+    }
+
+    .right {
+        gap: 2rem;
+    }
+
+    .text, .right button {
+        gap: 1.3rem;
+        scale: .9;
+    }
+}
+
+@media (max-width: 900px) {
+    .NavBar {
+        margin-left: 0;
+        padding-left: 0;
+        width: 95%;
+    }
+
+    .text, .right button, .left {
+        scale: .8;
+    }
+}
+
+@media (max-width: 750px) {
+    .NavBar {
+    }
+
+    .NavBar img {
+        display: block;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .NavBar {
+        justify-content: space-around;
+        gap: 6rem;
+    }
+
+    .get {
+        padding-left: 0;
+    }
+
+    .left {
+        scale: .6;
+    }
+}    */

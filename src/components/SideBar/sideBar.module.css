@@ -1,0 +1,102 @@
+.sideBar {
+    display: flex;
+    margin: 5px;
+    padding: 1.8rem;
+    padding-bottom: 7rem;
+    flex-direction: column;
+    position: fixed;
+    top: 30px;
+    /* left: 50px; */
+    background: inherit;
+    width: 90%;
+    height: 492px;
+    gap: 6rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+.sideBar div:nth-child(2) {
+    /* make navItems visible again */
+    display: flex;
+}
+
+.xBtn {
+    display: flex;
+    align-items: center;
+    align-self: end;
+    cursor: pointer;
+}
+
+.vector {
+    position: relative;
+    bottom: 0px;
+    right: 17px;
+}
+
+/* When navItems disappears in NavBar but appears in sideBar */
+@media (max-width: 750px) {
+    .sideBar div:nth-child(2) {
+        flex-direction: column;
+        /* justify-content: start; */
+        align-items: start;
+    }
+
+    .sideBar div:nth-child(2) div {
+        flex-direction: column;
+        justify-content: start;
+        padding-left: 10px;
+        /* Figma */
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1px;
+    }
+}
+
+@media (min-width: 750px) {
+    .sideBar {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .sideBar {
+        width: 87%;
+    }
+}
+
+@media (max-width: 550px) {
+    .sideBar {
+        width: 87%;
+    }
+}
+
+@media (max-width: 450px) {
+    .sideBar {
+        width: 83%;
+        padding-left: 1.1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .sideBar {
+        padding-left: 1rem;
+    }
+
+    .sideBar div:nth-child(2) {
+        scale: .9;
+    }
+}
+
+@media (max-width: 300px) {
+    .sideBar {
+        padding-left: 1rem;
+    }
+
+    .sideBar div:nth-child(2) {
+        scale: .9;
+    }
+}
