@@ -7,7 +7,6 @@ import './App.css';
 function App() {
 
   return (
-
     <div className='App'>
       {/* This App component represents the home page */}
       <Layout />
