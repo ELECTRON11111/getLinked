@@ -7,7 +7,7 @@ const Layout = () => {
     const [show, changeShow] = useState(false);
 
     function drawerOpenHandler() {
-        console.log(show);
+        // console.log(show);
         // ensure state immutability
         const newShowValue = true;
         changeShow(newShowValue);
@@ -15,7 +15,7 @@ const Layout = () => {
 
 
     function drawerCloseHandler() {
-        console.log(show);
+        // console.log(show);
         // ensure state immutability
         const newShowValue = false;
         changeShow(newShowValue);

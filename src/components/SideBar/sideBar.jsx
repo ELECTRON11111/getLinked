@@ -1,13 +1,10 @@
-import react, {useEffect} from "react";
+import react from "react";
 import NavItems from "../NavItems/NavItems";
 import VectorImg from "../../assets/x-btn/Vector.png";
 import CircleImg from "../../assets/x-btn/circle.png";
 import classes from "./sideBar.module.css";
 
 const SideBar = (props) => {
-    useEffect(() => {
-        console.log(props);
-    }, []);
 
     let attatchedClasses = [classes.sideBar, classes.close];
     if (props.open) {

@@ -1,13 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import NavItems from "../../components/NavItems/NavItems";
 import burgerVector from "../../assets/Vector.svg";
 import "./NavBar.css";
 
 const NavBar = (props) => {
-    useEffect(() => {
-        console.log(props);
-    }, []);
-
     return (
         <div className="NavBar">
             <div className="left">
