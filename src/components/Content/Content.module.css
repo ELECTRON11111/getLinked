@@ -1,0 +1,318 @@
+.Content {
+    background: inherit;
+    /* z-index: 5; */
+}
+
+.Content hr {
+    /* width: 1865px; */
+    max-width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.Content h1 {
+    z-index: 200;
+}
+
+
+.SectionOne {
+    background: none;
+    position: relative;
+}
+
+svg {
+    padding-top: 1rem;
+    width: 20.8125rem;
+    height: 0.69019rem;
+    flex-shrink: 0;
+    stroke-width: 10px;
+    stroke: #FF26B9;
+    background: none;
+    position: relative;
+    left: 75%;
+    bottom: 1.5rem;
+}
+
+.SectionOne h2 {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    /* max-width: 46.375rem; */
+
+    display: flex;
+    justify-content: right;
+    margin: 1.3rem;
+    margin-right: 4rem;
+}
+
+.SectionOne div {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 5rem; */
+}
+
+h3 {
+    font-family: 'Unica One';
+    color: #FFF;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%; 
+}
+
+h3 span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%; /* 1.16375rem */
+}
+
+.Left {
+    z-index: 200;
+    /* display: flex; */
+    flex-direction: column;
+    margin-left: 3rem;
+    height: 60%;
+    max-height: 50vh;
+}
+
+.Left h1 {
+    color: #FFF;
+    font-family: "Clash Display";
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.Left h1 span {
+    color:  #D434FE;;
+}
+
+.Left p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%; /* 2.075rem */
+}
+
+.Left button {
+    width: 10.75rem;
+    height: 3.3125rem;
+    border-radius: 0.25rem;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    margin-bottom: 4rem;
+}
+
+.CombinedImage {
+    /* position: absolute; */
+    z-index: 2;
+    right: 0;
+    top:0;
+    /* scale: 0.9; */
+}
+
+
+.ManInSmartGlasses {
+    max-width: 51.75rem;
+    min-height: 44.6875rem;
+    scale: 0.9;
+    background-blend-mode: luminosity; 
+}
+
+.Circle {
+    background: none;
+    max-width: 667px;
+    min-height: 641px;
+    background-blend-mode: hard-light;
+    position: absolute;
+    top: 10px;
+    
+}
+
+.Chain {
+    width: 5.375rem;
+    height: 5.375rem;
+    position: absolute;
+}
+
+.Left, .Left h1, .Content h2, .Content span, .Bulb, .SectionOne div, .CombinedImage, img,  p, h3 {
+    background: none;
+}
+
+/* Get bulb and stars out of Dom */
+
+.Star, .GreyStar, .GreyStar2 {
+    position: absolute;
+}
+
+.Bulb {
+    position: relative;
+    top: 3.0rem;
+    left: 32rem;
+}
+
+.Star {
+    left: 5vw;
+}
+
+.GreyStar {
+    left: 50vw;
+    top: 15vh;
+}
+
+.GreyStar2 {
+    left: 40vw;
+    top: 60vh;
+}
+
+@media (max-width: 1460px) {
+    .SectionOne h2 {
+        justify-content: center;
+        margin: 1.5rem 1.3rem;
+        margin-right: 0rem;
+    }
+    
+    .SectionOne div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .CombinedImage {
+        scale: 1.3;
+        position: relative;
+        top: 10rem;
+        overflow-x: unset;
+    }
+
+    svg {
+        left: 53%;
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .CombinedImage {
+        scale: 1.1;
+    }
+
+    svg {
+        right: 11rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .CombinedImage {
+        top: 0rem;
+        scale: 0.8;
+    }
+
+    .SectionOne div, .Left {
+        margin: 0px;
+        z-index: 0;
+    }
+
+    .SectionOne h2, .SectionOne svg, .Left h1 {
+        scale: .65;
+    }
+
+    .SectionOne h2 {
+        scale: 0.6;
+        margin: 10px 0px;
+        flex-shrink: 0;
+    }
+
+    .GreyStar {
+        top: 10vh;
+        left: 85vw;
+    }
+
+    svg {
+        left: 45%;
+    }
+}
+
+@media (max-width: 730px) {
+    .SectionOne h2 {
+        font-size: 1.8rem;
+    }
+    
+    .CombinedImage {
+        scale: 0.65;
+    }
+    
+    svg {
+        left: 40%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .SectionOne h1 {
+        font-size: 1rem;
+    }
+
+    .Left h1 {
+        margin-bottom: 0px;
+        font-size: 3rem;
+    }
+
+    .Chain, .Bulb {
+        scale: .85;
+        bottom: 6rem;
+    }
+
+    .Bulb {
+        /* position: relative;
+        top: 3.0rem;
+        left: 32rem; */
+        top: 1rem;
+        left: 19rem;
+    }
+
+    .CombinedImage {
+        scale: 0.5;
+    }
+}
+
+@media (max-width: 450px) {
+    .SectionOne h2 {
+        font-size: 1rem;
+    }
+
+    svg {
+        left: 55%;
+        width: 4.5rem;
+    }
+
+    .CombinedImage {
+        position: relative;
+        top: -7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .CombinedImage {
+        scale: 0.4;
+    }
+}
+
+@media(max-height: 860px) {
+    .CombinedImage {
+        top: -9rem;
+    }
+}

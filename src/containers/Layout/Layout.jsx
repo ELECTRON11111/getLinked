@@ -1,13 +1,17 @@
 import React, {useState} from "react";
 import NavBar from "../NavBar/navBar";
 import SideBar from "../../components/SideBar/sideBar";
+import Content from "../../components/Content/Content";
+
+import PurpleFlare from "../../assets/purple_flare.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import classes from "./Layout.module.css";
 
 const Layout = () => {
     // show is boolean.
     const [show, changeShow] = useState(false);
 
     function drawerOpenHandler() {
-        // console.log(show);
         // ensure state immutability
         const newShowValue = true;
         changeShow(newShowValue);
@@ -15,7 +19,6 @@ const Layout = () => {
 
 
     function drawerCloseHandler() {
-        // console.log(show);
         // ensure state immutability
         const newShowValue = false;
         changeShow(newShowValue);
@@ -24,8 +27,14 @@ const Layout = () => {
     return (
         // This is a hoc(Higher Order Component)
         <>
+            {/* Absolute property to be added to this flare */}
+            <LazyLoadImage 
+                src = {PurpleFlare}
+                className = {classes.PurpleFlare}
+            />
             <NavBar clicked = {drawerOpenHandler}/>
             <SideBar open = {show} cancelClicked = {drawerCloseHandler}/>
+            <Content />
         </>
     )
 }

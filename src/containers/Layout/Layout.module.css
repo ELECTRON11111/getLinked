@@ -1,0 +1,47 @@
+.PurpleFlare {
+    position: absolute;
+    z-index: 0;
+    background: none;
+    top: -10px;
+    left: 0px;
+}
+
+@media (max-width: 1460px) {
+    .PurpleFlare {
+        scale: 0.8;
+        top: -90px;
+        overflow-x: unset;
+    }
+}
+
+@media (max-width: 1050px) {
+    .PurpleFlare {
+        /* width: 100%; */
+        scale: 0.7;
+        top: -9rem;
+        left: -5rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .PurpleFlare {
+        scale: 0.4;
+        top: -10rem;
+        left: -10rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .PurpleFlare {
+        left: -24rem;
+        /* position: static; */
+        /* top: -10rem; */
+    }
+}
+
+@media(max-height: 860px) {
+    .PurpleFlare {
+        top: -11.5rem;
+    }
+}

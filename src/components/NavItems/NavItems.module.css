@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 8rem;
+    background: none;
 }
 
 .right button {
@@ -14,17 +15,20 @@
 }
 
 .text {
+    background: none;
     display: flex;
     gap: 3.5rem;
 }
 
 .text span {
+    background: none;
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;   
+    line-height: normal; 
+    cursor: pointer;  
 }
 
 @media (max-width: 1320px) {

@@ -1,10 +1,11 @@
 .NavBar {
     display: flex;
     width: 90%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     margin: 10px;
+    background: none;
     justify-content: space-between;
     padding-top: 30px;
     padding-left: 3em;
@@ -14,6 +15,7 @@
 .NavBar img {
     cursor: pointer;
     display: none;
+    background: none;
 }
 
 .get {
@@ -28,11 +30,16 @@
 
 .linked {
     color: #D434FE;
+    background: inherit;
     font-family: "Clash Display";
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.get, .linked, .left {
+    background: none;
 }
 
 @media (max-width: 1320px) {
