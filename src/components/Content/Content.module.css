@@ -311,8 +311,8 @@ h3 span {
     }
 }
 
-@media(max-height: 860px) {
+/* @media(max-height: 860px) {
     .CombinedImage {
         top: -9rem;
     }
-}
+} */
