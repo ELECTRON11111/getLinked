@@ -15,7 +15,8 @@ const Content = () => {
     return (
         <div className = {classes.Content}>
             <hr />
-            <SectionOne />        
+            <SectionOne />
+            <hr className={classes.Rule2}/>        
         </div>
     )
 }
