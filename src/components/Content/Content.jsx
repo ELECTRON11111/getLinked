@@ -8,6 +8,9 @@ import Chain from "../../assets/content/chain.svg";
 import ManInSmartGlasses from "../../assets/content/man_smartglasses.png";
 import Circle from "../../assets/content/Image_1.png";
 
+import theBigIdea from "../../assets/content/big_idea.png";
+import womanSitting from "../../assets/content/woman_sitting.png";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // These are for the Home's content
@@ -16,7 +19,22 @@ const Content = () => {
         <div className = {classes.Content}>
             <hr />
             <SectionOne />
-            <hr className={classes.Rule2}/>        
+            <hr className={classes.Rule2}/>   
+            <SecondAndThirdSections 
+                isThird = {false}
+                imgSrc = {theBigIdea}
+                whiteHeader = {"Introduction to getlinked"}
+                purpleHeader = {"tech Hackathon 1.0"}
+                text = {"Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world,that's what we're all about!"}
+            />     
+            <hr />
+            <SecondAndThirdSections 
+                isThird = {true}
+                imgSrc = {womanSitting}
+                whiteHeader = {"Rules and"}
+                purpleHeader = {"Guidelines"}
+                text = {"Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world,that's what we're all about!"}
+            />     
         </div>
     )
 }
@@ -86,11 +104,33 @@ function SectionOne() {
     )
 }
 
-function secondAndThirdSections() {
+function SecondAndThirdSections(props) {
+    const attachedClasses = [classes.SecondAndThirdSections];
+
+    /* props.isThird is boolean and flexReverse represents the class for the third section */
+
+    if (props.isThird) {
+        // add flex reverse property through utility class
+        attachedClasses.push(classes.FlexReverse);
+    }
+
     return (
-        <div className={classes.firstAndSecondSections}>
+        <section className={attachedClasses.join(" ")}>
+            <LazyLoadImage 
+                src = {props.imgSrc}
+                className = {classes.Sectionimg}
+            />
             
-        </div>
+            <div className={classes.SectionText}>
+                <div className={classes.Headers}>
+                    <span className={classes.WhiteHeader}>{props.whiteHeader}</span>
+                    <br />
+                    <span className={classes.PurpleHeader}>{props.purpleHeader}</span>
+                </div>
+
+                <p>{props.text}</p>
+            </div>
+        </section>
     )
 }
 
