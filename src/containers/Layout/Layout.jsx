@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import NavBar from "../NavBar/navBar";
 import SideBar from "../../components/SideBar/sideBar";
-import Content from "../../components/Content/Content";
+import Content from "../Content/Content";
 
 import PurpleFlare from "../../assets/purple_flare.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";

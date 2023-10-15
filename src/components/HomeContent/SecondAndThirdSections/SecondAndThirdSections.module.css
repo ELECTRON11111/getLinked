@@ -1,0 +1,164 @@
+/* 
+=========================================================
+SECOND AND THIRD SECTIONS
+_________________________________________________________
+*/
+
+.SecondAndThirdSections {
+    display: flex;
+    gap: 3rem;
+    margin: 6rem;
+    margin-top: 0rem;
+    max-width: 90%;
+    align-items: center;    
+}
+
+.Headers {
+    font-family: "Clash Display";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+
+.WhiteHeader {
+    color: #FFF;
+}
+
+.PurpleHeader {
+    color: #D434FE;
+}
+
+.SectionText p {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71875rem;
+    width: 100%;
+    text-align: start;
+}
+
+/* Utility class */
+.FlexReverse {
+    flex-direction: row-reverse;
+    display: grid;
+    gap: 4rem;
+    grid-auto-flow: column;
+    grid-template-columns: auto 50%; 
+    margin: 6rem;
+    margin-top: 0rem;
+    margin-right: 0rem;
+}
+
+.FlexReverse img {
+    scale: 0.9;
+}
+
+.FlexReverse .SectionText {
+    grid-column-start: 1;
+}
+
+/* 
+=======================================================
+GENERAL MEDIA QUERIES 
+_______________________________________________________
+*/
+
+@media (max-width: 1460px) {
+    /* Second and Third Sections  */
+    .SecondAndThirdSections {
+        margin-top: 16rem;
+    }
+
+    .FlexReverse {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 1330px) {
+    .FlexReverse img {
+        scale: 0.7;
+        
+    }
+}
+
+
+@media (max-width: 1200px) {
+    /* Second and third sections */
+    .SecondAndThirdSections { 
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .FlexReverse {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+        margin: 5rem;
+    }
+
+    .FlexReverse img {
+        scale: 0.8;
+        max-height: 80%;
+    }
+
+    .FlexReverse .SectionText {
+        position: relative;
+        bottom: 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+  /* second and third sections */
+    .SecondAndThirdSections {
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* second and third sections */
+    .SecondAndThirdSections {
+        position: relative;
+        bottom: 10rem;
+    }
+
+    .FlexReverse {
+        bottom: 0rem;
+    }
+
+    .SecondAndThirdSections img {
+        scale: 0.75;
+    }
+}
+
+@media (max-width: 500px) {
+    /* for second and third sections  */
+    .SecondAndThirdSections {
+        margin: 1rem;
+        /* bottom: 15rem; */
+    }
+    
+    .SecondAndThirdSections img {
+        scale: 0.7;
+        width: 100vw;
+    }
+
+    .FlexReverse {
+        bottom: 0rem;
+    }
+}
+
+@media (max-width: 450px) {
+  /* second and third sections */
+    .SecondAndThirdSections {
+        margin-top: 0rem;
+        bottom: 15rem;
+    }
+
+    .FlexReverse {
+        bottom: 0;
+    }
+}
