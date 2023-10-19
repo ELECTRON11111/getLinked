@@ -10,7 +10,8 @@ _________________________________________________________
     margin: 6rem;
     margin-top: 0rem;
     max-width: 90%;
-    align-items: center;    
+    align-items: center;  
+    z-index: 200;  
 }
 
 .Headers {
@@ -19,7 +20,8 @@ _________________________________________________________
     font-style: normal;
     font-weight: 700;
     margin-bottom: 1rem;
-} 
+    background: none;
+}
 
 .WhiteHeader {
     color: #FFF;
@@ -58,6 +60,13 @@ _________________________________________________________
 
 .FlexReverse .SectionText {
     grid-column-start: 1;
+    z-index: 200;
+    background: none;
+}
+
+.SectionText span {
+    z-index: 200;
+    background: none;
 }
 
 /* 

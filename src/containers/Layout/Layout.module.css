@@ -40,8 +40,8 @@
     }
 }
 
-/* @media(max-height: 860px) {
+@media(max-width: 362px) {
     .PurpleFlare {
-        top: -11.5rem;
+        display: none;
     }
-} */
+}

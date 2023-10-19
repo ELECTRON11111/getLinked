@@ -1,14 +1,11 @@
 .HomeContent {
     background: inherit;
-    /* z-index: 5; */
 }
 
 .HomeContent hr {
-    /* width: 1865px; */
-    /* position: relative; */
-    max-width: 100vw;
-    height: 1px;
     background: rgba(255, 255, 255, 0.18);
+    opacity: 0.5;
+    /* max-width: 100vw; */
 }
 
 .Rule2 {
@@ -20,7 +17,9 @@
     z-index: 200;
 }
 
-
+.PurpleFlare2 {
+    position: absolute;
+}
 /* 
 =======================================================
 GENERAL MEDIA QUERIES 
@@ -37,6 +36,10 @@ _______________________________________________________
 @media (max-width: 1200px) {
     .Rule2 {
         top: 8rem;
+    }
+
+    .PurpleFlare2 {
+        width: 80vw;
     }
 }
 

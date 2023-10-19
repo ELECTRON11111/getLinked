@@ -19,7 +19,7 @@ function SecondAndThirdSections(props) {
                 src = {props.imgSrc}
                 className = {classes.Sectionimg}
             />
-            
+
             <div className={classes.SectionText}>
                 <div className={classes.Headers}>
                     <span className={classes.WhiteHeader}>{props.whiteHeader}</span>

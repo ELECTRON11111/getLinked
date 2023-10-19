@@ -1,0 +1,278 @@
+/* 
+=========================================================
+FOURTH and FIFTH SECTIONS
+_________________________________________________________
+*/
+
+.FourthAndFifthSections {
+    display: flex;
+    /* gap: 3rem; */
+    margin: 5rem;
+    margin-top: 5rem;
+    max-width: 90%;
+    align-items: center;  
+    z-index: 200;  
+}
+
+.FourthAndFifthSections img {
+    scale: 0.9;
+    flex-grow: 0;
+}
+
+.Headers {
+    font-family: "Clash Display";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: none;
+}
+
+.WhiteHeader {
+    color: #FFF;
+}
+
+.PurpleHeader {
+    color: #D434FE;
+}
+
+.SectionText {
+    flex-grow: 1;
+}
+
+.SectionText p {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71875rem;
+    width: 100%;
+    text-align: start;
+}
+
+/* Flex reverse is the second section element in this component */
+.FlexReverse {
+    flex-direction: row-reverse;
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: auto 50%;  */
+    margin: 6rem;
+    margin-right: 0rem;
+}
+
+.FlexReverse img {
+    scale: 0.9;
+    position: relative;
+    left: 5rem;
+}
+
+.FlexReverse .SectionText {
+    grid-column-start: 1;
+    z-index: 200;
+}
+
+.SectionText span {
+    z-index: 200;
+    background: none;
+}
+
+/* For Fourth Unique Content */
+.FourthUniqueContent p {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.735rem;
+    margin-bottom: 1rem;
+}
+
+.FourthUniqueContent p:nth-child(5) {
+    margin-bottom: 3rem;
+}
+
+.FourthUniqueContent span {
+    color: #FF26B9;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.FourthUniqueContent button {
+    width: 10.75rem;
+    height: 3.3125rem;
+    border-radius: 0.25rem;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    margin-bottom: 4rem;
+}
+
+/* For Fifth Unique Content */
+.FifthUniqueContent {
+    margin-bottom: 1rem;
+}
+
+.FifthUniqueContent p{
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71875rem;
+    margin-bottom: 2rem;
+}
+
+.FifthUniqueContent p b {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ul li {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-bottom: 1px solid #D434FE;
+    cursor: pointer;
+}
+
+ul li span {
+    color: #D434FE;
+    margin-left: 0.5rem;
+    float: right;
+}
+
+/* 
+=======================================================
+GENERAL MEDIA QUERIES 
+_______________________________________________________
+*/
+
+@media (max-width: 1330px) {
+    .FlexReverse img {
+        scale: 0.7;
+        
+    }
+}
+
+
+@media (max-width: 1200px) {
+    /* Second and third sections */
+    .FourthAndFifthSections { 
+        flex-direction: column;
+        align-items: start;
+        margin-left: 5rem;
+        gap: 1rem;
+    }
+
+    .FlexReverse {
+        display: flex;
+        flex-direction: column;
+        margin: 0rem;
+        align-items: start;
+        margin-left: auto;
+        margin-top: 10rem;
+        gap: 1rem;
+    }
+    
+    .FlexReverse img {
+        order: 1;
+        scale: 0.8;
+        max-height: 80%;
+    }
+
+    .FlexReverse .SectionText {
+        order: 0;
+    }
+
+    ul {
+        width: 80vw;
+    }
+
+    ul li {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .FlexReverse img {
+        left: 0rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .FourthAndFifthSections img, .FlexReverse img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .FlexReverse {
+        bottom: 0rem;
+    }
+
+    .FourthAndFifthSections img {
+        scale: 0.75;
+    }
+}
+
+@media (max-width: 500px) {
+    .FourthAndFifthSections {
+        margin: 1rem;
+    }
+    
+    .FourthAndFifthSections img {
+        scale: 0.7;
+        width: 100vw;
+    }
+
+    .FlexReverse {
+        bottom: 0rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .FourthAndFifthSections {
+        bottom: 15rem;
+        margin-top: 2rem;
+    }
+
+    .FourUniqueContent {
+        justify-content: center;
+    }
+
+    .Headers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Headers br {
+        display: none;
+    }
+
+    .FourthUniqueContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FourthUniqueContent p {
+        float: center;
+        text-align: center;
+    }
+
+    .FlexReverse {
+        bottom: 0;
+    }
+
+    .FlexReverse img {
+        position: relative;
+        left: -1rem;
+    }
+}
