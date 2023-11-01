@@ -3,6 +3,8 @@ import classes from "./HomeContent.module.css";
 import SectionOne from "./SectionOne/SectionOne"; 
 import SecondAndThirdSections from "./SecondAndThirdSections/SecondAndThirdSections";
 import FourthAndFifthSections from "./FourthAndFifthSections/FourthAndFifthSections";
+import SeventhSection from "./SeventhSection/SeventhSection";
+import EighthSection from "./EighthSection/EighthSection";
 
 import theBigIdea from "../../assets/content/big_idea.png";
 import womanSitting from "../../assets/content/woman_sitting.png";
@@ -51,6 +53,8 @@ function HomeContent() {
                 purpleHeader = {"Question"}
             />
             <hr />
+            <SeventhSection />
+            <EighthSection />
         </div>
     )
 }

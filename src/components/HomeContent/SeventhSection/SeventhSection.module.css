@@ -1,0 +1,156 @@
+section {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 195rem; */
+}
+
+section p {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.709rem;
+    text-align: center;
+}
+
+.Top {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    margin-left: 55vw;
+}
+
+.Headers, .Top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* width: 50vw; */
+}
+
+.Headers span {
+    font-family: "Clash Display";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* align-self: center; */
+}
+
+.Top p {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.PurpleHeader {
+    color: #D434FE;
+}
+
+.Cup {
+    flex-shrink: 0;
+
+}
+
+.CupAndPrizes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Prizes {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 12rem;
+}
+
+.Prizes p {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.Prizes div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Prizes div div {
+    background: none;
+    position: relative;
+    bottom: 4.7rem;
+}
+
+.Prizes div img {
+    position: relative;
+    bottom: 5.5rem;
+}
+
+/* .Prizes div img:nth-child(1) {
+    bottom: 0rem;
+} */
+
+.Position {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.First {
+    order: 1;
+    width: 13.25rem;
+    height: 21.6875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #903AFF;
+    background: rgba(144, 58, 255, 0.12);
+}
+
+.First img {
+    bottom: 5.5rem;
+}
+
+.First .Amount {
+    bottom: 4.5rem;
+}
+
+.Second, .Third {
+    width: 13.25rem;
+    height: 18.5rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #D434FE;
+    background: rgba(212, 52, 254, 0.12);
+}
+
+.Second {
+    order: 0;
+}
+
+.Third {
+    order: 2;
+}
+
+.Amount {
+    color: #D434FE;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.328rem;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+.First .Amount {
+    color: #903AFF;
+}
+
