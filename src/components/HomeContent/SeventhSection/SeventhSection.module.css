@@ -1,7 +1,7 @@
 section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     /* margin-bottom: 195rem; */
 }
 
@@ -12,7 +12,8 @@ section p {
     font-style: normal;
     font-weight: 400;
     line-height: 1.709rem;
-    text-align: center;
+    /* text-align: center; */
+    text-align: start;
 }
 
 .Top {
@@ -45,7 +46,7 @@ section p {
     display: flex;
     justify-content: end;
     align-items: flex-end;
-    text-align: center !important;
+    text-align: start !important;
 }
 
 .PurpleHeader {
@@ -167,7 +168,6 @@ _______________________________________________________
         /* width: 80vw; */
         scale: 0.8;
     }
-
 }
 
 @media (max-width: 1200px) {
@@ -182,9 +182,17 @@ _______________________________________________________
         align-items: center;
         justify-content: center;
     }
+
+    .Top p {
+        text-align: center !important;
+    }
 }
 
 @media (max-width: 600px) {
+    section {
+        margin-bottom: 0rem;
+    }
+
     .Cup {
         width: 100vw;
     }

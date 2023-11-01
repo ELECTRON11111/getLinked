@@ -54,7 +54,9 @@ function HomeContent() {
             />
             <hr />
             <SeventhSection />
+            <hr />
             <EighthSection />
+            <hr />
         </div>
     )
 }

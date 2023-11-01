@@ -13,10 +13,10 @@ import Paybox from "../../../assets/content/Paybox.png";
 
 const EighthSection = () => {
     return (
-        <div className={classes.EighthSection}>
+        <section className={classes.EighthSection}>
             <div className={classes.Headers}>
                 <h2>Partners and Sponsors</h2>
-                <p>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
+                <p>Getlinked Hackathon 1.0 is honored to have the following major <br/> companies as its partners and sponsors</p>
             </div>
 
             <div className={classes.Grid_Container}>
@@ -57,7 +57,7 @@ const EighthSection = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
