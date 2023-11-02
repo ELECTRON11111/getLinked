@@ -6,11 +6,12 @@ import FourthAndFifthSections from "./FourthAndFifthSections/FourthAndFifthSecti
 import SeventhSection from "./SeventhSection/SeventhSection";
 import EighthSection from "./EighthSection/EighthSection";
 import NinthSection from "./NinthSection/NinthSection";
+import LastSection from "./LastSection/LastSection";
 
 import theBigIdea from "../../assets/content/big_idea.png";
 import womanSitting from "../../assets/content/woman_sitting.png";
 import analysisImg from "../../assets/content/analysis.png";
-import manOnCloudsImg from "../../assets/content/cwok_casual.png"
+import manOnCloudsImg from "../../assets/content/cwok_casual.png";
 import purpleFlare2 from "../../assets/purple_flare.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -59,7 +60,7 @@ function HomeContent() {
             <EighthSection />
             <hr />
             <NinthSection />
-            <hr />
+            <LastSection /> 
         </div>
     )
 }

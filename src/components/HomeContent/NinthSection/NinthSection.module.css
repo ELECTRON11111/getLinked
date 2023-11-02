@@ -192,4 +192,8 @@ p {
     .PadlockImg, .ManWithkeyImg {
         width: 80vw;
     }
+
+    .ManWithkeyImg {
+        bottom: 15rem;
+    }
 }
