@@ -5,6 +5,7 @@ import SecondAndThirdSections from "./SecondAndThirdSections/SecondAndThirdSecti
 import FourthAndFifthSections from "./FourthAndFifthSections/FourthAndFifthSections";
 import SeventhSection from "./SeventhSection/SeventhSection";
 import EighthSection from "./EighthSection/EighthSection";
+import NinthSection from "./NinthSection/NinthSection";
 
 import theBigIdea from "../../assets/content/big_idea.png";
 import womanSitting from "../../assets/content/woman_sitting.png";
@@ -56,6 +57,8 @@ function HomeContent() {
             <SeventhSection />
             <hr />
             <EighthSection />
+            <hr />
+            <NinthSection />
             <hr />
         </div>
     )

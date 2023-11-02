@@ -1,6 +1,6 @@
 .EighthSection {
     margin: 7rem 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -110,6 +110,7 @@
 @media (max-width: 1400px) {
     .EighthSection {
         gap: 4.5rem;
+        margin-bottom: 0rem;
     }
 
     .Grid_Container {

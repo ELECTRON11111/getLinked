@@ -1,0 +1,195 @@
+.NinthSection {
+    display: flex;
+    gap: 10rem;
+    margin: 8rem;
+    margin-bottom: 0rem;
+    /* text-align: start; */
+}
+
+p {
+    text-align: start;
+}
+
+.Headers {
+    margin-bottom: 3rem;
+    text-align: start;
+}
+
+.Headers h2 {
+    color: #FFF;
+    font-family: "Clash Display";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.PurpleText {
+    color: #D434FE !important;
+}
+
+.Ps p:nth-child(1) {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+
+}
+
+.Ps p:nth-child(2) {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 188.4%; /* 26.376px */
+    margin: 2rem 0 4rem 0;
+}
+
+.PolicySection {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #D434FE;
+    background: rgba(217, 217, 217, 0.03);
+    width: 40vw;
+    padding: 4rem;
+}
+
+.PolicySection span {
+    color: #D434FE;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 216.4%; /* 34.624px */
+    background: none;
+    margin-top: 4rem;
+}
+
+.PolicySection h3 {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 216.4%; 
+    margin-bottom: 1rem;
+}
+
+.PolicySection button {
+    width: 172px;
+    height: 53px;
+    flex-shrink: 0;
+    margin: 2rem auto;
+    border-radius: 4px;
+    color: #FFF;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+} 
+
+/* For the Right side of the Section,  I.E the Images */
+.PadlockImg {
+    z-index: 0;
+}
+
+.ManWithkeyImg {
+    z-index: 10;
+    position: relative;
+    bottom: 28rem;
+    right: 4rem;
+}
+
+.Checklist {
+    background: none;
+}
+
+.ChecklistItem {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    background: none;
+}
+
+@media(max-width: 1600px) {
+    .NinthSection {
+        gap: 1.5rem;
+        margin-left: 5rem;
+    }
+
+    .Right {
+        scale: 0.7;
+    }
+}
+
+@media(max-width: 1200px) {
+    .NinthSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 8rem;
+    }
+
+    .Left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Right {
+        display: flex;
+        flex-direction: column;
+        scale: 0.8;
+    }
+
+    .Ps>p:nth-child(1) {
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .Ps>p:nth-child(2) {
+        position: relative;
+        bottom: 2rem;
+    }
+    
+    .Headers h2, p {
+        text-align: center;
+    }
+    
+    .ChecklistItem p {
+        text-align: start;
+    }
+}
+
+@media(max-width: 500px) {
+    .PolicySection {
+        padding: 2rem;
+        width: 65vw;
+    }
+
+    .PolicySection span, 
+    .PolicySection h3,
+    .PolicySection p, 
+    .ChecklistItem p {
+        font-size: 12px;
+    }
+    
+    .PolicySection button {
+        color: #FFF;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 96.35px;
+        height: 31.346px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    }    
+
+    .PadlockImg, .ManWithkeyImg {
+        width: 80vw;
+    }
+}
