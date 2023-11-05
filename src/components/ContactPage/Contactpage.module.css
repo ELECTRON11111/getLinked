@@ -1,0 +1,139 @@
+.ContactPage {
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 6rem; */
+    z-index: 200;
+}
+
+h4, h3, h2, span {
+    color: #D434FE;
+    font-family: "Clash Display";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: none;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.HeadersUnique {
+    background: none;
+}
+
+.ContactPage form {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ContactPage form input{
+    /* width: 437px; */
+    width: 40vw;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2rem;
+}
+
+.ContactPage form>input:nth-child(4), .MessageBox {
+    height: 119px;
+}
+
+.Socials, .Icons {
+    background: none;
+}
+
+form button {
+    width: 172px;
+    height: 53px;
+    flex-shrink: 0;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
+
+form p {
+    display: none;
+}
+
+.LeftText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    /* justify-content: space-evenly; */
+    gap: 1rem;
+    position: relative;
+    top: 5rem;
+    background: none;
+}
+
+li {
+    list-style: none;
+}
+
+.Icons {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media(max-width: 1200px) {
+    p {
+        text-align: start !important;
+    }
+}
+
+@media(max-width: 900px) {
+    .ContactPage {
+        flex-direction: column-reverse;
+    }
+
+    form p {
+        display: block;
+        font-size: 12px;
+    }
+
+    .LeftText > h2, .LeftText p {
+        display: none;
+    }
+
+    .ContactPage form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ContactPage form input {
+        width: 70vw;
+    }
+
+    .Socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    
+}
